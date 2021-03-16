@@ -6,18 +6,31 @@ let lastName = "Stark";
 // Do the following:
 
 // Alert the value of the firstName.
+alert(firstName);
 // Alert the value of the lastName.
+alert(lastName);
 // Assign a new value of `"John"` to firstName.
+firstName = "John";
 // Assign a new value of `"Snow"` to lastName.
+lastName = "Snow";
 // Alert the new value of `firstName` and `lastName` by concatenating them
+alert(firstName + " " + lastName);
 // Create a new varaible using `const` named `fullName` and assign the fullname using firstName and lastName seperated by space.
-
+const fullName = firstName + " " + lastName;
 // Declare three variables `name,` `newUser` and `isAdmin`.
+let name;
+let newUser;
+let isAdmin;
 // Assign your name as the value of `name`.
+name = "bitopan";
 // Assign the value of `name` to `newUser`.
+newUser = name;
 // Set the value of `isAdmin` to `true`.
+isAdmin = true;
 // Alert the values of all the three variables.
-
+alert(name);
+alert(newUser);
+alert(isAdmin);
 // Assignment and re-assignment
 
 var wiseMan = "Tyrion Lannister";
@@ -25,6 +38,7 @@ var wiseMan = "Tyrion Lannister";
 // Follow instructions and do the following. In case of an error write the error in comment
 
 // Reassign the value of `wiseMan` to "Samwell Tarly"
+wiseMan = "Samwell Tarly";
 // Declare a variable `userName` with value "Lysa Arryn"
 // Declare a variable named `oddNumber` and assign a value `57`.
 // Reassign the value of `oddNumber` to 61
