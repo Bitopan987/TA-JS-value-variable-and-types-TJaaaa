@@ -14,27 +14,9 @@ let lastName = "Stark";
   - Alert message saying `I am [username] and my bio is [bio]`. Replace square brackets with the value of variable.
   - Alert the message `I'm Arya Stark of Winterfell` using the variable name firstName and lastName.
 */
-alert(
-  "I" +
-    " " +
-    "am" +
-    " " +
-    username +
-    " " +
-    "and" +
-    " " +
-    "my" +
-    " " +
-    "bio" +
-    " " +
-    "is" +
-    " " +
-    bio
-);
+alert("I am " + username + " " + "and my bio is " + bio);
 
-alert(
-  `I'm` + " " + firstName + " " + lastName + " " + "of" + " " + "Winterfell"
-);
+alert("I 'm" + " " + firstName + " " + lastName + " " + "of Winterfell");
 
 /* Do the following using string template literal
   - Alert message saying `I am [username] and my bio is [bio]`. Replace square brackets with the value of variable.
@@ -61,20 +43,8 @@ the tax amount is ${(amount * taxPercent) / 100}`);
   - Above message should be in two lines
 */
 alert(
-  "The" +
-    " " +
-    "total" +
-    " " +
-    "amount" +
-    " " +
-    "is" +
-    " " +
-    amount / nthe +
-    " " +
-    "tax" +
-    " " +
-    "amount" +
-    " " +
-    "is" +
-    "(amount * taxPercent) / 100"
+  "The total amount is " +
+    amount +
+    " \n the tax amount is " +
+    (amount * taxPercent) / 100
 );
