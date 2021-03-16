@@ -40,16 +40,24 @@ var wiseMan = "Tyrion Lannister";
 // Reassign the value of `wiseMan` to "Samwell Tarly"
 wiseMan = "Samwell Tarly";
 // Declare a variable `userName` with value "Lysa Arryn"
+let userName = "Lysa Arryn";
 // Declare a variable named `oddNumber` and assign a value `57`.
+let oddNumber = 57;
 // Reassign the value of `oddNumber` to 61
-
+oddNumber = 61;
 // Mathematical Operation
 
 let amount = 4280;
 
 // Using mathematical operations find the solutions. `(+, -, \*, / , etc.)`
-
+alert(oddNumber - amount);
 // Declare a new variable `reducedAmount`. In it store the value that is 24 less than the value of amount.
+let reducedAmount = amount - 24;
 // Declare another variable `addedAmount`. It's value should be 32 more than the value of amount.
+let addedAmount = amount + 32;
 // Declare a variable `multipleAmount`. It's value should be 7 times the value of amount.
+let multipleAmount = amount * 7;
 // Declare a variable `dividedAmount`. It should store the resultant of amount divided by 57.
+let dividedAmount = amount / 57;
+alert(reducedAmount);
+alert(addedAmount);
