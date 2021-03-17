@@ -172,14 +172,19 @@ if (marks > 100) {
 */
 
 let weather = prompt("What is the weather like outside?");
-if (weather == "sunny") {
-  alert("Wear a T-shirt");
-} else if (weather == "rainy") {
-  alert(`Don't forget to take your raincoat`);
-} else if (weather == "hot") {
-  alert(`Get a hanky`);
-} else if (weather == "freezing") {
-  alert(`Get your sweeter on`);
-} else {
-  alert(`Not a valid input`);
+switch (weather) {
+  case "sunny":
+    alert("Wear a T-shirt");
+    break;
+  case "rainy":
+    alert(`Don't forget to take your raincoat`);
+    break;
+  case "hot":
+    alert(`Get a hanky`);
+    break;
+  case "freezing":
+    alert(`Get your sweeter on`);
+    break;
+  default:
+    alert(`Not a valid input`);
 }
