@@ -14,5 +14,17 @@ const ACCESSORY_PRICE = 9.99;
 var bank_balance = 303.91;
 var amount = 0;
 // your code goes here
+let totalExpense = 0;
+let phoneExpense = 0;
+let accessoryExpense = 0;
+while (bank_balance > phoneExpense + PHONE_PRICE) {
+  phoneExpense += PHONE_PRICE;
+  if (phoneExpense + accessoryExpense < SPENDING_THRESHOLD) {
+    accessoryExpense += ACCESSORY_PRICE;
+  }
+}
+totalExpense = phoneExpense + accessoryExpense;
+amount = totalExpense + totalExpense * TAX_RATE;
+alert(amount);
 
 // ⛑ Answer of the above will `$334.76`.
