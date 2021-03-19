@@ -11,9 +11,9 @@ Write a program that asks the user his/her age and check for the following condi
 👇
 */
 let age = +prompt("what is your age?");
-if ((age = 55 > 12)) {
+if (age < 55 && age > 12) {
   alert("You can participate in the marathon");
-} else if ((age = 11 > 4)) {
+} else if (age < 11 && age > 4) {
   alert(" You are too young to participate in the marathon");
 } else if (age < 4) {
   alert(" Hey Kiddo! Can You Walk ?");
@@ -33,12 +33,25 @@ n = 7 => output: heeeeeeello
 👇
 */
 // [Your code goes here]
-
+let count = +prompt("Enter the number of e!");
+const start = "h";
+const end = "llo";
+let middle = "";
+for (let i = 0; i < count; i++) {
+  middle += "e";
+}
+alert(start + middle + end);
 /*
 Program to calculate the sum of first n natural numbers(1,2,3...n are known as natural numbers). Prompt user to enter n (using `prompt`) then based on input provided calculate and show result in `alert`.
 👇
 */
 // [Your code goes here]
+let max = +prompt("Enter the value of n ?");
+let sum = 0;
+for (let i = 0; i <= max; i++) {
+  sum += i;
+}
+alert(`the value of the sum ${sum}`);
 
 /* Switch Statement
 
@@ -58,7 +71,38 @@ Take a number value from user and alert the message if it matches the conditions
 
 */
 // [Your code goes here]
-
+let number = +prompt("number value");
+switch (true) {
+  case number == 1:
+    alert("ONE");
+    break;
+  case number == 2:
+    alert("TWO");
+    break;
+  case number == 3:
+    alert("THREE");
+    break;
+  case number == 4:
+    alert("FOUR");
+    break;
+  case number == 5:
+    alert("FIVE");
+    break;
+  case number == 6:
+    alert("SIX");
+    break;
+  case number == 7:
+    alert("SEVEN");
+    break;
+  case number == 8:
+    alert("EIGHT");
+    break;
+  case number == 9:
+    alert("NINE");
+    break;
+  default:
+    alert("plz try again");
+}
 /*
 🎖Using switch statement do the following
 
@@ -74,17 +118,59 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 */
 
 // [Your code goes here]
-
+let mark = +prompt("number value");
+switch (true) {
+  case mark > 90:
+    alert("AA");
+    break;
+  case mark > 80 && mark <= 90:
+    alert("AB");
+    break;
+  case mark > 70 && mark <= 80:
+    alert("BB");
+    break;
+  case mark > 60 && mark <= 70:
+    alert("BC");
+    break;
+  case mark > 50 && mark <= 60:
+    alert("CC");
+    break;
+  case mark > 40 && mark <= 50:
+    alert("CD");
+    break;
+  case mark > 30 && mark <= 40:
+    alert("DD");
+    break;
+  case mark <= 30:
+    alert("FF");
+    break;
+  default:
+    alert("plz try again");
+}
 /*
  🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
 */
 // [your code goes here]
-
+const num1 = +prompt("first number");
+const num2 = +prompt("second number");
+if (num1 > num2) {
+  alert("first number is greater");
+} else {
+  alert("second number is greater");
+}
 /*
 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
 */
 // [Your code goes here]
-
+const numOne = +prompt("first number");
+const numTwo = +prompt("second number");
+const numThree = +prompt("second number");
+let product = numOne * numTwo * numThree;
+if (product > 0) {
+  alert("final value is positive");
+} else {
+  alert("Final value is negative");
+}
 /* Calculator
  🎖Make a simple calculator with these functions. Using prompt, type conversion, if else statement. Use prompt to take the input from user i.e two numbers and an operation (Add, Sub, Mul, Div).
 
@@ -98,3 +184,23 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 */
 
 // [Your code goes here]
+
+let firstNum = +prompt("Enter first number");
+let secNum = +prompt("Enter first number");
+let operation = prompt("Enter an operation out of (add,sub,div,multiply");
+switch (operation) {
+  case "add":
+    alert(`the sum of ${firstNum} and ${secNum} is ${firstNum + secNum}`);
+    break;
+  case "sub":
+    alert(`the sub of ${firstNum} and ${secNum} is ${firstNum - secNum}`);
+    break;
+  case "div":
+    alert(`the div of ${firstNum} and ${secNum} is ${firstNum / secNum}`);
+    break;
+  case "product":
+    alert(`the product of ${firstNum} and ${secNum} is ${firstNum * secNum}`);
+    break;
+  default:
+    alert("Enter valid input");
+}
